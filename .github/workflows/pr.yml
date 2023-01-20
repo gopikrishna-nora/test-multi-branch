@@ -1,4 +1,4 @@
-name: build-docker-push
+name: PR
 on: 
   pull_request:
     branches:
