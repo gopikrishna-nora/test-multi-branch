@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Check if PR is merged
-      if: github.event.pull_request.merged == true
+      #if: github.event.pull_request.merged == true
       run: echo "PR is merged to ${GITHUB_REF##*/}" 
 
     - name: Tasks List
