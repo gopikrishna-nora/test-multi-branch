@@ -1,0 +1,13 @@
+name: push
+on: 
+  push:
+    branches:
+      - 'dev'
+    
+jobs:
+  generateInputPaths:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Testing
+      run: echo " This is test Branch"

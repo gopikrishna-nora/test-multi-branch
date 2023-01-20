@@ -1,0 +1,14 @@
+name: PR
+on: 
+  pull_request_review:
+    types: [edite, assigned, opened]
+    branches:
+      - 'master'
+    
+jobs:
+  generateInputPaths:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Testing
+      run: echo " This is Master Branch"
