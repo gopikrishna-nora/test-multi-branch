@@ -1,4 +1,4 @@
-name: build-docker-push
+name: push
 on: 
   push:
     branches:
