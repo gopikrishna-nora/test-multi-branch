@@ -1,14 +1,17 @@
-name: PR
+name: PR Merged
 on: 
   pull_request:
-    types: [merged]
+    types: [closed]
     branches:
       - 'master'
     
 jobs:
-  generateInputPaths:
+  Test:
     runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v2
-    - name: Testing
-      run: echo " This is Master Branch"
+    
+    - name: Check if PR is merged
+      if: github.event.pull_request.merged == true
+      run: echo "PR is merged to ${GITHUB_REF##*/}" 
