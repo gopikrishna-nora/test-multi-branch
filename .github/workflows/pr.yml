@@ -1,6 +1,7 @@
 name: PR
 on: 
   pull_request:
+    types: [merge]
     branches:
       - 'master'
     
