@@ -2,7 +2,7 @@ name: build-docker-push
 on: 
   push:
     branches:
-      - 'test'
+      - 'dev'
     
 jobs:
   generateInputPaths:
