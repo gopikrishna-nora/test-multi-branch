@@ -1,0 +1,13 @@
+name: build-docker-push
+on: 
+  push:
+    branches:
+      - 'test'
+    
+jobs:
+  generateInputPaths:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Testing
+      run: echo " This is test Branch"
