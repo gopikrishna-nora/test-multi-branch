@@ -1,7 +1,7 @@
 name: PR
 on: 
   pull_request_review:
-    types: [edite, assigned, opened]
+    types: [edited, assigned, opened]
     branches:
       - 'master'
     
